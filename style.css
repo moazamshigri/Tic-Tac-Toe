@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+.body{
+    display: flex;
+    transition: .5s;
+    height: 85vh;
+}
+.player01{
+    padding-top: 82px;
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.player02{
+    padding-top: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+
+    float: right;
+}
+.main{
+    background-color: inherit;
+    
+}
+.ticTacToeContainer {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    background-color: yellow;
+    height: 5px;
+    color: white;
+    width: 137px;
+    margin-top: 17px;
+    border-radius: 12px;
+    
+}
+.box{
+    height: 183px;
+    border: 1px solid black;
+    width: 213px;
+    /* border-radius: 7px; */
+    display: flex;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    border: 1px solid black;
+}
+._box{
+    display: flex;
+    height: 33.33%;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.ticTacToeContainer{
+    display: flex;
+    flex-direction: column;
+}
+.reset{
+    position: relative;
+    top: 45px;
+    height: 31px;
+    width: 109px;
+}
+footer{
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a:hover{
+    color: black;
+}
+@media (max-width:506px) {
+    .player01,.player02{
+        font-size: 12px;
+        width: 40%;
+    }
+    .player02{
+        position: relative;
+    font-size: 12px;
+    width: 40%;
+    right: 60px;
+    z-index: -10;
+    }
+    .player01{
+        position: relative;
+    left: 60px;
+    z-index: -10;
+    }
+    .activeBar01,.activeBar02{
+        width: 85px;
+    }
+}
