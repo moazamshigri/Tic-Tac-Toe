@@ -38,14 +38,14 @@ function check() {
         p1++;
         player1.prepend(winner);
         alert("Player 1 win");
-        player2.children[1].innerHTML = `<h4>Win = ${p1}</h4>`;
+        player1.children[1].innerHTML = `<h4>Win = ${p1}</h4>`;
 
     }
     if (box1.innerText == "2" && box2.innerText == "2" && box3.innerText == "2" || box1.innerText == "2" && box4.innerText == "2" && box7.innerText == "2" || box1.innerText == "2" && box5.innerText == "2" && box9.innerText == "2" || box3.innerText == "2" && box6.innerText == "2" && box9.innerText == "2" || box3.innerText == "2" && box5.innerText == "2" && box7.innerText == "2" || box7.innerText == "2" && box8.innerText == "2" && box9.innerText == "2" || box4.innerText == "2" && box5.innerText == "2" && box6.innerText == "2"|| box2.innerText == "2" && box5.innerText == "2" && box8.innerText == "2"){
         p2++;
         player2.prepend(winner);
         alert("Player 2 win");
-        player1.children[1].innerHTML = `<h4>Win = ${p2}</h4>`;
+        player2.children[1].innerHTML = `<h4>Win = ${p2}</h4>`;
     }
 
 
